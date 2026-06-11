@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex008</title>
+
+    <style>
+
+        button {
+
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Velocidade do carro:</p><input type="number" name="txtvel" id="vel"> km/h
+    <br>
+    <button onclick="verificar()">Verificar</button>
+    <p id= "resultado"></p>
+    <p id= "verifica"></p>
+    <script>
+
+    function verificar() {
+        var txtv = window.document.getElementById('vel')
+        var resu = window.document.getElementById('resultado')
+        var ver = window.document.querySelector('p#verifica')
+        var vel = Number(txtv.value)
+
+        resu.innerHTML = `Sua velociade é de <strong>${vel}Km/h</strong>`
+
+        if (vel > 60 ) {
+             ver.innerHTML = `Você está <strong>multado</strong> por execesso de velocidade`
+
+        } else {
+
+            ver.innerHTML = `Dirija sempre com cuidado!`
+        }
+    }
+    </script>
+
+</body>
+</html>

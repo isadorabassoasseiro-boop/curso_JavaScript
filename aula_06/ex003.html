@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+    <style>
+
+        body {
+            background-color: #6bb6b0;
+        }
+
+        h1, p {
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>  
+        // não é obrigatório usar 'window'
+        var n1 = window.prompt('Digite um numero') // string
+        var n2 = window.prompt('Digite outro numero') //string
+        var s = n1 + n2
+        window.alert('A soma é: ' + s)
+
+        //+ para adição e concatenação
+        //Number.parseInt(n)
+        //Number.parseFloat(n)
+        var n3 = Number.parseInt(window.prompt('Digite um numero'))
+        var n4 = Number.parseInt(window.prompt('Digite outro numero'))
+        var s1 = n3 + n4
+        window.alert('A soma é: ' + s1)
+
+        var n5 = Number(window.prompt('Digite um numero'))
+        var n6 = Number(window.prompt('Digite outro numero'))
+        var s2 = n5 + n6
+        window.alert(`A soma é ${s2}`)
+        // para converter numero para string --> String(n) e n.toString()
+
+
+    </script>
+</body>
+</html>

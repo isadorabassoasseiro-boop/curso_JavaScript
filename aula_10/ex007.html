@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex007</title>
+
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name = "textn1" id = "textn1"> +
+    <input type="number" name = "textn2" id = "textn2">
+    <button onclick = "somar()">Somar</button>
+    <p id = "result">Resultado: </p>
+
+    <script>
+
+        function somar(){
+        var tn1 = window.document.getElementsByName('textn1')[0]
+        var tn2 = window.document.getElementsByName('textn2')[0]
+        var result = window.document.getElementById('result')
+
+        var n1 = Number(tn1.value) // converte para number
+        var n2 = Number(tn2.value) 
+        var soma = n1 + n2 
+
+        result.innerHTML = `Resultado: <strong>${soma}</strong>`
+        
+        }
+
+    </script>
+
+    
+
+</body>
+</html>

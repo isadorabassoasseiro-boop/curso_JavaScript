@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>005</title>
+    <style>
+
+        body {
+            background-color: #abce83;
+            color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 name = 'titulo'>Iniciando estudos DOM</h1>
+    <p class = 'parag'>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id = 'msg'>Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] // [0] indica o componente que voce quer acessar
+
+        // window.document.write(p1.innerText) // replica 'Aqui vai o resultado'
+        // p1.style.color = 'black' // muda a cor do p
+        // corpo.style.backgroundColor = 'black' // muda cor do body
+
+        window.document.write(p1.innerHTML) // pega a informação que está no html 
+
+        // window.alert(p1.innerHTML)
+
+        // var msg = window.document.getElementById('msg')
+        msg.style.background = 'coral'
+        // msg.innerText = 'estou aguardando' 
+        // window.document.getElementById('msg').innerText = 'Olá'
+
+        window.document.getElementsByName('titulo')[0].style.color = 'purple'
+
+        window.document.getElementsByClassName('parag')[0].innerText = 'Oi'
+
+        // var d = window.document.querySelector('div#msg')
+        // d.style.color = 'blue'
+
+        
+    </script>
+</body>
+</html>
