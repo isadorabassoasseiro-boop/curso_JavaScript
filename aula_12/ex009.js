@@ -1,6 +1,6 @@
 var agora = new Date() //dia, mês, ano -- hora, minutos, segundos... do usuario
 
-var diaSem = agora.getDay()
+var diaSem = agora.get()
 
 /* 
     0 = Domingo
